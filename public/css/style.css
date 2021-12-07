@@ -1,0 +1,137 @@
+body{
+    color:white;
+    background-color:rgba(0, 174, 255, 0.918);
+    padding-left:3rem;
+}
+.row1{
+    display:flex;
+    margin-bottom:5rem;
+}
+ul{
+    list-style: none;
+    justify-content:space-between;
+    color:white;
+    display:flex;
+}
+li a{
+    color:white;
+    text-decoration: none;
+}
+li{
+    flex:1;
+    display:block;
+}
+li:hover{
+    background-color:rgb(197, 197, 197);
+}
+.colA{
+    padding-top:1rem;
+    flex:1;
+    order:1;
+   max-width:100%;
+}
+.colB{
+    flex:1;
+    order:2;
+   max-width:100%;
+}
+h1{
+    color:red;
+    font-size:3vw;
+}
+.row2{
+    display:flex;
+}
+.col1{
+    flex:1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top:2.5rem;
+    height:14vw;
+    width:14vw;
+}
+.col2{
+    flex:1;
+}
+.spans{
+    max-width:100%;
+    height:0.1rem;
+    border-radius:0.3rem;
+    padding:0.1rem;
+    color:white;
+}
+form{
+    max-width:50vw;
+    max-height:60vw;
+    margin-top:2.5rem;
+    margin-left:15rem;
+    padding:5rem;
+    background-color:crimson;
+}
+input{
+    width:20rem;
+    height:1.5rem;
+    border-radius:0.5rem;
+}
+h{
+    padding-left:28rem;
+    color:darkmagenta;
+    text-decoration:underline;
+    font-size:300%;
+}
+.create{
+    margin-bottom:1rem;
+    border-radius:0.3rem;
+}
+.btn{
+    padding:0.5rem;
+    margin-left:4rem;
+    background-color: white;
+    border-radius:0.4rem;
+}
+
+.toggle-button{
+   position:absolute;
+   top:0.75rem;
+   right:1rem;
+   display:none;
+   color:white;
+   flex-direction:column;
+   justify-content:space-between;
+   width:25px;
+   height:20px;
+}
+.spans{
+    height:2px;
+    width:100%;
+    background-color:white;
+    border-radius:10px;  
+}
+a{
+    text-decoration: none;
+}
+@media(max-width:600px){
+
+    ul{
+        justify-content:space-between;
+        padding-top:2rem;
+        display:none;
+    }
+    .toggle-button{
+        display:flex;
+    }
+    li{ 
+        padding-bottom:1rem;  
+    }
+    .list{
+        display:flex;
+        flex-direction:column;
+    }
+    .btn{
+        padding:0.1rem;
+        margin-right:3rem;
+        background-color: white;
+        border-radius:0.3rem;
+    }
+}
+   
