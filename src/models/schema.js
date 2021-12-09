@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-const historySchema =mongoose.Schema({
+const historySchema =new mongoose.Schema({
     sender:{
         type:String,
         required:true,

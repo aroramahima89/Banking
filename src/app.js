@@ -4,6 +4,8 @@ const path=require("path");
 const Customer=require("./models/customer");
 const History=require("./models/schema");
 const hbs=require("hbs");
+const validator=require("validator");
+const { default: isEmail } = require("validator/lib/isemail");
 require("./db/conn");
 const port=process.env.PORT || 8000;
 app.use(express.json());
@@ -67,16 +69,24 @@ app.get("/createAccount",(req,res)=>{
 })
 
 app.post("/createAccount",(req,res)=>{
-   const name=req.body.name;
-   const email=req.body.email;
-   const amount=req.body.amount;
-
-   const account=new Customer({
-      name:name,
-      email:email,
-      amount:amount
-   })
-   account.save();
+   try{
+      const name=req.body.name;
+      const email=req.body.email;
+      const currentbalance=req.body.currentbalance;
+      let account=new Customer({
+        name:name,
+        email:email,
+        currentbalance:currentbalance
+      })
+      account.save();
+      res.render("success");
+   }
+   catch(err){
+      res.status(404).render("failure",{
+         x:"server error occured.."
+      });
+   }
+   
 })
 
 app.get("/transaction",async(req,res)=>{
@@ -121,7 +131,9 @@ app.post("/transaction",async(req,res)=>{
       res.render("success");  
    }
    catch(err){
-    res.render("failure");
+    res.render("failure",{
+       x:"transaction"
+    });
    }
 }) 
 

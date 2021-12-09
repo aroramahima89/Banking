@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 const validator=require("validator");
 
-const customerSchema =mongoose.Schema({
+const customerSchema =new mongoose.Schema({
     name:{
         type:String,
         required:true,
@@ -24,7 +24,7 @@ const customerSchema =mongoose.Schema({
         type:Date,
         default:Date.now()
     }
-})
+},{collection:'Customers'})
 
 //we need a collection
 const Customer=mongoose.model("Customer",customerSchema);
