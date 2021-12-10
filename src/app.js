@@ -5,7 +5,6 @@ const Customer=require("./models/customer");
 const History=require("./models/schema");
 const hbs=require("hbs");
 const validator=require("validator");
-const { default: isEmail } = require("validator/lib/isemail");
 require("./db/conn");
 const port=process.env.PORT || 8000;
 app.use(express.json());
