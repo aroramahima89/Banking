@@ -70,7 +70,7 @@ form{
 }
 input{
     margin-left:4rem;
-    width:15rem;
+    width:18rem;
     height:1.5rem;
     border-radius:0.5rem;
 }
@@ -83,7 +83,7 @@ h{
 
 .btn{
     padding:0.5rem 0.8rem;
-    margin-left:8rem;
+    margin-left:7rem;
     background-color: white;
     border-radius:0.4rem;
 }
