@@ -23,23 +23,23 @@
     </form> -->
 
     <form method="post" action="/transaction" class="form-inline">
-  <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sender's name:</label></p>
+  <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Sender's name:</label>
   <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="sender">
     <option selected>Choose...</option>
       {{#each customer}} 
         <option>{{this.name}}</option>   
     {{/each}}
-  </select>
+  </select></p>
 
-  <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Receiver's name:</label></p>
+  <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Receiver's name:</label>
   <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="receiver">
    <option selected>Choose...</option>
       {{#each customer}}
         <option>{{this.name}}</option>
     {{/each}}
-  </select>
-       <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Amount:</label></p>
-      <p><input type="number" class="create" placeholder="Amount in rupees" name="amount"></p>
+  </select></p>
+       <p><label class="my-1 mr-2" for="inlineFormCustomSelectPref">Amount:</label>
+       <input type="number" class="create" placeholder="Amount in rupees" name="amount"></p>
        <button type="submit"class="btn btn-outline-secondary my-1">Transfer</button>
 </form>
 </body>

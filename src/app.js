@@ -78,8 +78,12 @@ app.post("/createAccount",(req,res)=>{
         email:email,
         currentbalance:currentbalance
       })
-      account.save();
-      res.render("success");
+      account.save().then((res)=>{
+         console.warn(res);
+         res.render("success");
+      })
+      .catch(err=>res.render("failure",{ x:err}));
+    
    }
    catch(err){
       res.status(404).render("failure",{

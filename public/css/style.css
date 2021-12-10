@@ -61,7 +61,7 @@ h1{
     color:white;
 }
 form{
-    max-width:50vw;
+    max-width:40vw;
     max-height:60vw;
     margin-top:2.5rem;
     margin-left:15rem;
@@ -69,7 +69,8 @@ form{
     background-color:crimson;
 }
 input{
-    width:20rem;
+    margin-left:4rem;
+    width:15rem;
     height:1.5rem;
     border-radius:0.5rem;
 }
@@ -79,15 +80,18 @@ h{
     text-decoration:underline;
     font-size:300%;
 }
-.create{
-    margin-bottom:1rem;
-    border-radius:0.3rem;
-}
+
 .btn{
-    padding:0.5rem;
-    margin-left:4rem;
+    padding:0.5rem 0.8rem;
+    margin-left:8rem;
     background-color: white;
     border-radius:0.4rem;
+}
+
+.create{
+    margin-left:2rem;
+    margin-bottom:1rem;
+    border-radius:0.3rem;
 }
 
 .toggle-button{
@@ -110,7 +114,7 @@ h{
 a{
     text-decoration: none;
 }
-@media(max-width:600px){
+@media(max-width:900px){
 
     ul{
         justify-content:space-between;
@@ -127,11 +131,32 @@ a{
         display:flex;
         flex-direction:column;
     }
+    
+.create{
+    margin-left:0.8rem;
+}
+    form{
+        max-width:50%;
+        max-height:60%;
+        margin-top:0.8rem;
+        margin-left:5rem;
+        padding:2rem;
+        background-color:crimson;
+    }
+    input{
+        width:8rem;
+        height:1.5rem;
+        border-radius:0.5rem;
+    }
+    h{
+        padding-left:5rem;
+        font-size:250%;
+    }
     .btn{
-        padding:0.1rem;
-        margin-right:3rem;
+        padding:0.3rem;
+        margin-left:1.1rem;
         background-color: white;
-        border-radius:0.3rem;
+        border-radius:0.2rem;
     }
 }
    
