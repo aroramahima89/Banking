@@ -158,5 +158,8 @@ a{
         background-color: white;
         border-radius:0.2rem;
     }
+    h1{
+        font-size:150%;
+    }
 }
    
