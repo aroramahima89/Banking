@@ -1,1 +1,1 @@
-node src/app.js
+nodemon src/app.js -e js,hbs
