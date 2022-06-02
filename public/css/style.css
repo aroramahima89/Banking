@@ -132,9 +132,9 @@ a{
         flex-direction:column;
     }
     
-.create{
-    margin-left:0.8rem;
-}
+   .create{
+      margin-left:0.8rem; 
+    }
     form{
         max-width:50%;
         max-height:60%;
